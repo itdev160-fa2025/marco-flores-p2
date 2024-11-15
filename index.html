@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hour-By-Hour</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Hour-By-Hour</h1>
+        
+        <div class="user-info">
+            <label for="user-name">User name:</label>
+            <input type="text" id="user-name" placeholder="User name w/ 6 characters.">
+            <label for="user-password">Password:</label>
+            <input type="text" id="user-password" placeholder="Password w/ 8 characters.">
+            <button id="submit-user-info-button">Log in</button>
+        </div>
+        
+        <div class="header-button">
+            <button id="new-button">New form</button>
+        </div>
+        <div class="user-data">
+            <p id="login-required-alert"></p>
+            <p id="user-message"></p>
+            <p id="password-message"></p>
+            <p id="user-name-displayed"></p>
+            <p id="user-password-displayed"></p>
+        </div>
+    </header>
+    
+    <main>
+<div id="user-form-modal" class="modal">    
+        <form>
+            <div class="job-form">
+                <label for="job-number">Job number:</label>
+                <input type="text" id="job-number" placeholder="Enter job number" required>
+                <p id="job-number-alert"></p>
+            </div><br>
+
+            <div class="job-form">
+                <label for="job-item">Item:</label>
+                <input type="text" id="job-item" placeholder="Enter Item" required>
+                <p id="job-item-alert"></p>
+            </div><br>
+
+            <div class="job-form">
+                <label for="job-quantity">Quantity:</label>
+                <input type="text" id="job-quantity" placeholder="Enter job quantity" required>
+                <p id="job-quantity-alert"></p>
+            </div><br>
+
+            <div class="job-form">
+                <label for="job-lines">Lines:</label>
+                <input type="text" id="job-lines" placeholder="Enter job lines" required>
+                <p id="job-lines-alert"></p>
+            </div><br>
+
+            <div class="job-form">
+                <label for="job-complete-short">Complete/Short:</label>
+                <select id="job-complete-short">
+                    <option value="none">None</option>
+                    <option value="complete">Complete</option>
+                    <option value="short">Short</option>
+                </select>    
+            </div><br>
+            
+            <div class="job-form">
+                <label for="job-material-short">Material short/Quantity:</label>
+                <input type="text" id="job-material-short" placeholder="Enter material short(e.g. 3444650/240pcs)">
+            </div><br>
+
+            <div class="job-form">
+                <label for="job-pallets">Pallets:</label>
+                <input type="text" id="job-pallets" placeholder="Enter number of pallets" required>
+                <p id="job-pallets-alert"></p>
+            </div><br>
+            <footer>
+                <p id="form-alert"></p>
+                <p id="alert-info"></p>
+                <button id="submit-job-button">Submit</button>
+                <button id="clear-modal-button">Clear</button>
+                <button id="close-modal-button">Close</button>
+            </footer>
+        </form>
+</div>
+
+
+        <div class="job-info">
+            <p id="job-number-info"></p>
+            <p id="job-item-info"></p>
+            <p id="job-quantity-info"></p>
+            <p id="job-lines-info"></p>
+            <p id="job-complete-short-info"></p>
+            <p id="job-material-short-info"></p>
+            <p id="job-pallets-info"></p>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
